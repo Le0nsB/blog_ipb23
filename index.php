@@ -1,17 +1,19 @@
 <?php
 
 require "functions.php";
+require "Database.php";
 
 echo "
 <style>
     body{
         background-image: linear-gradient(#000000, #320000);
         font-family: Courier, monospace;
+        color: #ffffff;
     }
     ul{
       font-size: 22px;
       font-weight: bold;
-      background: -webkit-linear-gradient(#ff9a21, #ff1f7f);
+      background: -webkit-linear-gradient(#cf9a21, #ac1f43);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -29,6 +31,9 @@ $dsn = "mysql:host=localhost;port=3306;user=root;password=;dbname=blog_ipb23;cha
 
 // PDO - PHP Data Object
 $pdo = new PDO($dsn);
+
+$db = new Database();
+$db->query();
 
 // 1. Sagatavot vaicājumu (statement)
 $statement = $pdo->prepare("SELECT * FROM posts");
