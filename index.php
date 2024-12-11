@@ -6,8 +6,14 @@ echo "
 <style>
     body{
         background-image: linear-gradient(#000000, #320000);
-        color: #ff9a21;
         font-family: Courier, monospace;
+    }
+    ul{
+      font-size: 22px;
+      font-weight: bold;
+      background: -webkit-linear-gradient(#ff9a21, #ff1f7f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 </style>";
 
