@@ -1,13 +1,29 @@
 body{
-    background-image: radial-gradient(circle, #320000, #000000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-image: radial-gradient(circle, #373737, #000000);
     font-family: Courier, monospace;
     color: #ffffff;
+    border-style: solid;
+    border-width: 6px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(#cf9a21, #cf4121);
+    height: 97vh;
 }
 ul{
     font-size: 22px;
     font-weight: bold;
-    background: -webkit-linear-gradient(#cf9a21, #ac1f43);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#cf9a21;
+}
+li{
+    text-shadow: 2px 2px 6px #000000;
+    transition: color 1s ease-out, transform 0.8s ease-out;
+}
+li:hover{
+    color: #cf4121;
+    transform: scale(1.07);
 }
 
