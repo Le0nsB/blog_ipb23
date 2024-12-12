@@ -1,23 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+</body>
+</html>
 <?php
 
 require "functions.php";
 require "Database.php";
-
-echo "
-<style>
-    body{
-        background-image: linear-gradient(#000000, #320000);
-        font-family: Courier, monospace;
-        color: #ffffff;
-    }
-    ul{
-      font-size: 22px;
-      font-weight: bold;
-      background: -webkit-linear-gradient(#cf9a21, #ac1f43);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-</style>";
+$config = require("config.php");
 
 // 1. Izveidot datu bāzi ✔
 // 2. Savienot PHP sr datu bāzi ✔
@@ -26,17 +23,17 @@ echo "
 // db nosaukums, parole, lietotājvārds
 // mysql_connect ❌
 
-$db = new Database();
-$posts = $db->query("SELECT * FROM posts");
-
-//dd($posts[0]["content"]);
+$db = new Database($config["database"]);
+$posts = $db->query("SELECT * FROM posts")->fetchAll();
 
 // Ar foreach izvadīt content
+echo "<div>";
 echo "<ul>";
 foreach($posts as $post){
   echo "<li>" . $post["content"] . "</li>";
 }
 echo "</ul>";
+echo "</div>";
 
 
  

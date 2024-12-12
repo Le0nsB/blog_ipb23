@@ -1,0 +1,13 @@
+body{
+    background-image: radial-gradient(circle, #320000, #000000);
+    font-family: Courier, monospace;
+    color: #ffffff;
+}
+ul{
+    font-size: 22px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#cf9a21, #ac1f43);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
