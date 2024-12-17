@@ -9,7 +9,7 @@ CREATE TABLE posts (
 	content  VARCHAR(5200)
 );
 
-INSERT INTO posts
+INSERT INTO posts 
 (content)
 VALUES
 ("HO HO HO🎅"),

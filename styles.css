@@ -20,7 +20,7 @@ ul{
 }
 li{
     text-shadow: 2px 2px 6px #000000;
-    transition: color 1s ease-out, transform 0.8s ease-out;
+    transition: color 4s ease, transform 0.1s ease;
 }
 li:hover{
     color: #cf4121;

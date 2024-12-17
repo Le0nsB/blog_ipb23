@@ -7,4 +7,4 @@ function dd($data) {
     var_dump($data);
     echo "</pre>";
     die();
-}
+} 
