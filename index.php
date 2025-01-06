@@ -7,24 +7,30 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
 </body>
 </html>
 <?php
 
 require "functions.php";
 require "Database.php";
+
 $config = require("config.php");
-
-// 1. Izveidot datu bāzi ✔
-// 2. Savienot PHP sr datu bāzi ✔
-// 3. Izvadīt datus HTML ✔
-
-// db nosaukums, parole, lietotājvārds
-// mysql_connect ❌
 
 $db = new Database($config["database"]);
 $posts = $db->query("SELECT * FROM posts")->fetchAll();
+
+var_dump(isset($_GET["search_query"]));
+if (isset($_GET["search_query"]) && $_GET["search_query"] != "" ){
+  echo "Atgriezt ierakstus";
+  $posts = $db ->query("SELECT * FROM posts WHERE content LIKE '%" . $_GET["search_query"] . "%';")->fetchAll();
+
+}
+
+echo "<h1>Logs</h1>";
+echo "<form>";
+  echo "<input name='search_query'/>";
+  echo "<button>🕵️‍♂️</button>";
+echo "</form>";
 
 // Ar foreach izvadīt content
 echo "<div>";
