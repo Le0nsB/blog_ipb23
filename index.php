@@ -17,14 +17,15 @@ require "Database.php";
 $config = require("config.php");
 
 $db = new Database($config["database"]);
-$posts = $db->query("SELECT * FROM posts")->fetchAll();
 
-var_dump(isset($_GET["search_query"]));
+$select = "SELECT * FROM posts";
+$params = [];
 if (isset($_GET["search_query"]) && $_GET["search_query"] != "" ){
-  echo "Atgriezt ierakstus";
-  $posts = $db ->query("SELECT * FROM posts WHERE content LIKE '%" . $_GET["search_query"] . "%';")->fetchAll();
-
+  $search_query = "%" . $_GET["search_query"] . "%";
+  $select .= " WHERE content LIKE :nosaukums";
+  $params = ["nosaukums" => $search_query];
 }
+$posts = $db->query($select, $params)->fetchAll();
 
 echo "<h1>Logs</h1>";
 echo "<form>";
@@ -32,6 +33,9 @@ echo "<form>";
   echo "<button>🕵️‍♂️</button>";
 echo "</form>";
 
+if(count($posts) == 0){
+  echo $_GET["search_query"] . "  nav atrasts";
+};
 // Ar foreach izvadīt content
 echo "<div>";
 echo "<ul>";
@@ -40,6 +44,3 @@ foreach($posts as $post){
 }
 echo "</ul>";
 echo "</div>";
-
-
- 

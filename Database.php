@@ -13,11 +13,11 @@ class Database{
         $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     }
 
-    public function query($sql){
+    public function query($sql, $params){
         // 1. Sagatavot vaicājumu (statement)
         $statement = $this->pdo->prepare($sql);
         // 2. Izpildīt statement
-        $statement->execute();
+        $statement->execute($params);
         return $statement;
     }
 } 
