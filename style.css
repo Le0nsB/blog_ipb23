@@ -40,14 +40,14 @@ li:hover {
     transform: scale(1.07);
 }
 input{
-    border-color: #cf4121;
+    border-color: #cf8921;
     background-color: #dbad41;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-width: 3px;
 }
 button{
-    border-color: #cf4121;
+    border-color: #cf8921;
     background-color: #cf9a21;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
