@@ -27,20 +27,4 @@ if (isset($_GET["search_query"]) && $_GET["search_query"] != "" ){
 }
 $categories = $db->query($select, $params)->fetchAll();
 
-echo "<h1>Logs</h1>";
-echo "<form>";
-  echo "<input name='search_query'/>";
-  echo "<button>🕵️‍♂️</button>";
-echo "</form>";
-
-if(count($categories) == 0){
-  echo $_GET["search_query"] . "  nav atrasts";
-};
-// Ar foreach izvadīt content
-echo "<div>";
-echo "<ul>";
-foreach($categories as $category){
-  echo "<li>" . $category["category_name"] . "</li>";
-}
-echo "</ul>";
-echo "</div>";
+require "views/categories.view.php";
