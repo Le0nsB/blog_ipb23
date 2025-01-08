@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logs</title>
-  <link rel="stylesheet" href="categories_style.css">
+  <link rel="stylesheet" href="css/categories_style.css">
 </head>
 <body>
 </body>

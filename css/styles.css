@@ -4,11 +4,11 @@ body {
     align-items: center;
     justify-content: center;
     text-align: left;
-    background-image: radial-gradient(circle, #373737, #000000);
+    background-image: radial-gradient(circle, #424242, #000000);
     font-family: Courier, monospace;
-    color: #ffffff;
-    height: 97vh;
-    border: 8px solid;
+    color: #cf9a21;
+    height: 95vh;
+    border: 12px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(90deg, #cf9a21, #cf4121);
     animation: borderMove 4s linear infinite;
@@ -54,6 +54,7 @@ button{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-width: 3px;
+    
 }
 
 @keyframes borderMove {
@@ -73,5 +74,3 @@ button{
         border-image-source: linear-gradient(90deg, #cf9a21, #cf4121);
     }
 }
-
-
