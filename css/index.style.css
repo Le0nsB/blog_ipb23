@@ -54,8 +54,8 @@ button{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-width: 3px;
-    
 }
+
 
 @keyframes borderMove {
     0% {

@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logs</title>
-  <link rel="stylesheet" href="css/categories_style.css">
-</head>
-<body>
-</body>
-</html>
 <?php
 
 require "functions.php";
@@ -27,4 +16,6 @@ if (isset($_GET["search_query"]) && $_GET["search_query"] != "" ){
 }
 $categories = $db->query($select, $params)->fetchAll();
 
+$pageTitle = "Categories";
+$style = "css/categories.style.css";
 require "views/categories.view.php";

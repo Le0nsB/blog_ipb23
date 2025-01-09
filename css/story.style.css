@@ -6,45 +6,44 @@ body {
     text-align: left;
     background-image: radial-gradient(circle, #373737, #000000);
     font-family: Courier, monospace;
+    font-weight: bold;
     color: #ffffff;
     height: 97vh;
     border: 12px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(90deg, #7221cf, #21cf9b);
+    border-image-source: linear-gradient(90deg, #8f21cf, #a51212);
     animation: borderMove 3s linear infinite;
 }
 h1{
     font-size: 30px;
-    font-weight: bold;
-    color: #8732e7;
+    color: #8f21cf;
     text-shadow: 2px 2px 6px #000000;
     transition: color 1s ease, transform 0.6s ease;
 }
 h1:hover{
-    color: #21cf9b;
+    color: #a51212;
     transform: scale(1.3);
 }
 p{
     text-shadow: 2px 2px 6px #000000;
-    font-weight: bold;
-    color: #8732e7;
+    color: #a51212;
 }
 
 
 @keyframes borderMove {
     0% {
-        border-image-source: linear-gradient(90deg, #7221cf, #21cf9b);
+        border-image-source: linear-gradient(90deg, #8f21cf, #a51212);
     }
     25% {
-        border-image-source: linear-gradient(180deg, #7221cf, #21cf9b);
+        border-image-source: linear-gradient(180deg, #8f21cf, #a51212);
     }
     50% {
-        border-image-source: linear-gradient(270deg, #7221cf, #21cf9b);
+        border-image-source: linear-gradient(270deg, #8f21cf, #a51212);
     }
     75% {
-        border-image-source: linear-gradient(360deg, #7221cf, #21cf9b);
+        border-image-source: linear-gradient(360deg, #8f21cf, #a51212);
     }
     100% {
-        border-image-source: linear-gradient(90deg, #7221cf, #21cf9b);
+        border-image-source: linear-gradient(90deg, #8f21cf, #a51212);
     }
 }
