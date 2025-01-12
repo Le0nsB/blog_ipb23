@@ -9,7 +9,7 @@ class Database{
         // Data Source Name
         $dsn = "mysql:" . http_build_query($config, "", ";");
         // PDO - PHP Data Object
-        $this->pdo = new PDO($dsn); 
+        $this->pdo = new PDO($dsn);
         $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     }
 

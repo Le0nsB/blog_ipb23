@@ -1,4 +1,3 @@
-
 <?php
 
 // Dump and die
