@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: left;
     background-image: radial-gradient(circle, #373737, #000000);
     font-family: Courier, monospace;

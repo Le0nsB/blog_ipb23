@@ -14,7 +14,8 @@
     elseif($uri == "/categories"){
         require "controllers/categories.php";
     }
-    elseif($uri == http_response_code(404)){
+    else{
+        http_response_code(404);
         echo "<p>Atvainojiet, lapa netika atrasta!</p>";
         die();
     }
