@@ -54,6 +54,11 @@ button{
     border-bottom-right-radius: 8px;
     border-width: 3px;
 }
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 @keyframes borderMove {

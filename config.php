@@ -9,5 +9,4 @@ return [
         "dbname" => "blog_ipb23",
         "charset" => "utf8mb4"
     ]
-     
 ];
