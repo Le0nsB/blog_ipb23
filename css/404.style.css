@@ -14,36 +14,25 @@ body {
 }
 @keyframes borderMove {
     0% {
-        border-image-source: linear-gradient(36deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
+        border-image-source: radial-gradient(circle, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
     }
-    10% {
-        border-image-source: linear-gradient(72deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
+    18% {
+        border-image-source: radial-gradient(circle, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff, #ff0000);
     }
-    20% {
-        border-image-source: linear-gradient(108deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
+    35% {
+        border-image-source: radial-gradient(circle, #ffee00, #88ff00, #0000ff, #ff00ff, #ff0000, #ff8800);
     }
-    30% {
-        border-image-source: linear-gradient(144deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
-    }
-    40% {
-        border-image-source: linear-gradient(180deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
-    }
-    50% {
-        border-image-source: linear-gradient(216deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
-    }
-    60% {
-        border-image-source: linear-gradient(252deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
+    54% {
+        border-image-source: radial-gradient(circle, #88ff00, #0000ff, #ff00ff, #ff0000, #ff8800, #ffee00);
     }
     70% {
-        border-image-source: linear-gradient(288deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
+        border-image-source: radial-gradient(circle, #0000ff, #ff00ff, #ff0000, #ff8800, #ffee00, #88ff00);
     }
-    80% {
-        border-image-source: linear-gradient(324deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
-    }
-    90% {
-        border-image-source: linear-gradient(0deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
+    86% {
+        border-image-source: radial-gradient(circle, #ff00ff, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff);
     }
     100% {
-        border-image-source: linear-gradient(36deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
+        border-image-source: radial-gradient(circle, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
     }
 }
+

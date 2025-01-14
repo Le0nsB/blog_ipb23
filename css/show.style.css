@@ -15,12 +15,12 @@ body {
 h1{
     font-size: 30px;
     font-weight: bold;
-    color: #cf9a21;
+    color: #ffdb86;
     text-shadow: 2px 2px 6px #000000;
     transition: color 1s ease, transform 0.6s ease;
 }
 h1:hover{
-    color: #cf4121;
+    color: #f37256;
     transform: scale(1.3);
 }
 
