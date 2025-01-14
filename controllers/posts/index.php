@@ -14,4 +14,4 @@ $posts = $db->query($select, $params)->fetchAll();
 
 $pageTitle = "Logs";
 $style = "css/index.style.css";
-require "views/index.view.php";
+require "views/posts/index.view.php";

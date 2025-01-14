@@ -1,6 +1,6 @@
 
-<?php require "components/header.php";?>
-<?php require "components/navbar.php"?>
+<?php require "views/components/header.php";?>
+<?php require "views/components/navbar.php"?>
   <h1>Logs</h1>
   <form>
     <input name='search_query' value='<?= $_GET["search_query"] ?? "" ?>'/>
@@ -15,8 +15,8 @@
   <div>
     <ul>
       <?php foreach($posts as $post) { ?>
-        <li> <?= $post["content"] ?> </li>
+        <li><a class="aij" href="show?id=<?= $post["id"] ?>"> <?= $post["content"] ?></a> </li>
       <?php } ?>
     </ul>
   </div>
-<?php require "components/footer.php" ?>
+<?php require "views/components/footer.php" ?>

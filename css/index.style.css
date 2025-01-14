@@ -12,14 +12,14 @@ body {
     border-image-source: linear-gradient(90deg, #cf9a21, #cf4121);
     animation: borderMove 4s linear infinite;
 }
-h1{
+.aij{
     font-size: 30px;
     font-weight: bold;
     color: #cf9a21;
     text-shadow: 2px 2px 6px #000000;
     transition: color 1s ease, transform 0.6s ease;
 }
-h1:hover{
+.aij:hover{
     color: #cf4121;
     transform: scale(1.3);
 }
