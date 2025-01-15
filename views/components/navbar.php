@@ -2,8 +2,9 @@
     <nav>
         <ul>
             <li><a href="/">Visi blogi</a></li>
-            <li><a href="categories">Categories</a></li>
-            <li><a href="about">Story</a></li>
+            <li><a href="categories">Kategorijas</a></li>
+            <li><a href="about">Stāsts</a></li>
+            <li><a href="create">Izveidot</a></li>
         </ul>
     </nav>
 </header>

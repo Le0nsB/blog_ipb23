@@ -1,5 +1,5 @@
 
-<?php require "views/components/header.php";?>
+<?php require "views/components/header.php"?>
 <?php require "views/components/navbar.php"?>
   <h1>Logs</h1>
   <form>
@@ -15,7 +15,7 @@
   <div>
     <ul>
       <?php foreach($posts as $post) { ?>
-        <li><a class="aij" href="show?id=<?= $post["id"] ?>"> <?= $post["content"] ?></a> </li>
+        <li><a class="aij" href="show?id=<?= $post["id"] ?>"> <p><?= $post["content"] ?></p></a> </li>
       <?php } ?>
     </ul>
   </div>
