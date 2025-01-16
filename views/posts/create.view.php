@@ -4,7 +4,7 @@
 <h1>Izveidot bloga ierakstu</h1>
 <form method="POST">
     <label>
-        <input name="content" value="<?= htmlspecialchars($_POST['content'] ?? '') ?>" />
+        <input class="create" name="content" value="<?= htmlspecialchars($_POST['content'] ?? '') ?>" /><button type="submit" class="create"><span>ಠ_ಠ</span></button>
     </label>
     <?php if(isset($errors["content"])) { ?>
        <p><?= htmlspecialchars($errors["content"]) ?></p>

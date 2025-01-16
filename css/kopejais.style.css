@@ -7,6 +7,7 @@ body{
     border: 12px solid;
     border-image-slice: 1;
     padding: 0;
+    margin: 0;
 
 }
 header{
@@ -21,7 +22,7 @@ header ul{
     gap: 20px;
     list-style-type: none;
 }
-header ul li{
+header nav ul li{
     padding: 7px 15px;
 }
 a{

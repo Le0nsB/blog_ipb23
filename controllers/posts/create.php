@@ -1,16 +1,12 @@
 <?php
 
+require "Validator.php";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
     $errors = [];
-
-    if (!isset($_POST["content"]) || strlen($_POST["content"]) == 0) {
-        $errors["content"] = "Saturam jābūt ievadītam.";
-    } elseif (strlen($_POST["content"]) > 50) {
-        $errors["content"] = "Saturam jābūt ne garākam par 50 rakstzīmēm.";
-    }
-
-    if (empty($errors)) {
+    if (!Validator::string($_POST["content"], max: 50)) {
+        $errors["content"] = "Saturam jābūt ievadītam bet īsākam par 50 rakstzīmēm.";
+    } elseif (empty($errors)) {
         $sql = "INSERT INTO posts (content) VALUES (:content)";
         $params = ["content" => $_POST["content"]];
         $db->query($sql, $params);
