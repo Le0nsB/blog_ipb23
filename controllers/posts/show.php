@@ -7,9 +7,10 @@ $sql = "SELECT * FROM posts WHERE id = :id";
 $params = ["id" => $_GET["id"]];
 $post = $db->query($sql, $params)->fetch();
 
+
 if (!$post){
     redirectIfNotFound();
 }
 $pageTitle = "Show";
-$style = "css/show.style.css";
+$style = "css/show.styles.css";
 require "views/posts/show.view.php";
