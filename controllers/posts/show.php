@@ -10,5 +10,6 @@ $post = $db->query($sql, $params)->fetch();
 if (!$post){
     redirectIfNotFound();
 }
+$pageTitle = "Show";
 $style = "css/show.style.css";
 require "views/posts/show.view.php";
