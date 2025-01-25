@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: left;
-    height: 100vh;
+    height: 95vh;
     border: 12px solid;
     border-image-slice: 1;
     padding: 0;
@@ -35,4 +35,5 @@ a:hover{
 }
 input{
     border-style: solid;
+    border-radius: 4px;
 }

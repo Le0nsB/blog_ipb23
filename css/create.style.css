@@ -1,8 +1,6 @@
 body {
-    background-image: radial-gradient(circle, #424242, #000000);
     color: #cf9a21;
     border-image-source: linear-gradient(90deg, #00FFFF, #dd657b);
-    animation: borderMove 4s linear infinite;
     margin: 0px;
 }
 h1{
@@ -17,10 +15,6 @@ h1:hover{
     transform: scale(1.2);
 }
 form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     color:#b20e6b;
 }
 .create{
@@ -30,10 +24,6 @@ form{
     background-color: #a5e0e0;
     border-radius: 4px;
 }
-
-
-
-
 @keyframes borderMove {
     0% {
         border-image-source: linear-gradient(90deg, #00FFFF, #dd657b);

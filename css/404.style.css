@@ -1,8 +1,6 @@
 body {
-    background-image: radial-gradient(circle, #424242, #000000);
     color: #ff0000;
     border-image-source: linear-gradient(90deg, #ff0000, #ff8800, #ffee00, #88ff00, #0000ff, #ff00ff);
-    animation: borderMove 4s linear infinite;
     margin: 0px;
 }
 @keyframes borderMove {

@@ -1,8 +1,6 @@
 body {
-    background-image: radial-gradient(circle, #424242, #000000);
     color: #cf9a21;
     border-image-source: linear-gradient(90deg, #cf9a21, #cf4121);
-    animation: borderMove 4s linear infinite;
     margin: 0px;
 }
 .aij{
@@ -46,13 +44,6 @@ button{
     border-bottom-right-radius: 8px;
     border-width: 3px;
 }
-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
 @keyframes borderMove {
     0% {
         border-image-source: radial-gradient(circle, #cf9a21, #cf4121);

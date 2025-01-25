@@ -1,8 +1,6 @@
 body {
-    background-image: radial-gradient(circle, #424242, #000000);
     color: #cf9a21;
     border-image-source: linear-gradient(90deg, #cf9a21, #cf4121);
-    animation: borderMove 4s linear infinite;
     margin: 0px;
 }
 h1{
