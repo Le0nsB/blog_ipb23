@@ -1,7 +1,5 @@
 body {
-    color: #cf9a21;
     border-image-source: linear-gradient(90deg, #cf9a21, #cf4121);
-    margin: 0px;
 }
 h1{
     font-size: 30px;

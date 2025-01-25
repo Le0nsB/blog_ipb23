@@ -1,7 +1,6 @@
 body {
     color: #cf9a21;
     border-image-source: linear-gradient(90deg, #cf9a21, #cf4121);
-    margin: 0px;
 }
 .aij{
     font-size: 20px;
@@ -32,8 +31,6 @@ li:hover {
 input{
     border-color: #a76c14;
     background-color: rgba(239, 194, 73, 0.2);
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
     border-width: 3px;
     outline-color: #b65800;
 }

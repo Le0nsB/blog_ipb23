@@ -27,5 +27,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $pageTitle = "Edit";
-$style = "css/edit.style.css";
+$style = "css/edit.styles.css";
 require "views/posts/edit.view.php";
