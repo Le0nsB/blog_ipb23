@@ -1,6 +1,5 @@
 body {
     background-image: radial-gradient(circle, #424242, #000000);
-    font-family: Courier, monospace;
     color: #cf9a21;
     border-image-source: linear-gradient(90deg, #00FFFF, #dd657b);
     animation: borderMove 4s linear infinite;
@@ -29,7 +28,7 @@ form{
     border-width: 3px;
     border-color: #056969;
     background-color: #a5e0e0;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 

@@ -1,6 +1,5 @@
 body {
     background-image: radial-gradient(circle, #373737, #000000);
-    font-family: Courier, monospace;
     font-weight: bold;
     color: #ffffff;
     border-image-source: linear-gradient(90deg, #8f21cf, #a51212);

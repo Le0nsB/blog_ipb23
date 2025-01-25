@@ -1,6 +1,5 @@
 body {
     background-image: radial-gradient(circle, #373737, #000000);
-    font-family: Courier, monospace;
     color: #ffffff;
     border-image-source: linear-gradient(90deg, #10b42c, #21b5cf);
     animation: borderMove 3s linear infinite;
@@ -32,11 +31,10 @@ li:hover {
     transform: scale(1.07);
 }
 input{
-    border-style: outset;
     border-color: #10b42c;
     background-color:#73d483 ;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
     border-width: 3px;
     outline-color: #077e1b;
     transition: background-color 1s ease;

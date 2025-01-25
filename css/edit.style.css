@@ -1,6 +1,5 @@
 body {
     background-image: radial-gradient(circle, #424242, #000000);
-    font-family: Courier, monospace;
     color: #cf9a21;
     border-image-source: linear-gradient(90deg, #4d2002, #d4da87);
     animation: borderMove 4s linear infinite;

@@ -1,6 +1,5 @@
 body {
     background-image: radial-gradient(circle, #424242, #000000);
-    font-family: Courier, monospace;
     color: #cf9a21;
     border-image-source: linear-gradient(90deg, #cf9a21, #cf4121);
     animation: borderMove 4s linear infinite;
@@ -23,24 +22,38 @@ button{
     justify-content: center;
     border-style: solid;
     border-color:#f37256;
+    border-width: 3px;
     color:#f37256;
-    background-color:transparent;
-    font-weight: 900;
-    font-size: large;
-    width: 10vh;
-    height: 3vh;
+    background-color: rgba(216, 121, 81, 0.2);
+    font-size: 5vh;
+    width: 21vh;
+    height: 5vh;
+    font-family:'Courier New', Courier, monospace;
 }
+img{
+    width: 5vh;
+    height: 5vh;
+    object-fit: cover;
+}
+button:hover img{
+    animation: mymove 3s linear infinite;
+}
+
 .edit{
     display: flex;
     align-items: center;
     justify-content: center;
     border-style: solid;
     border-color:#56c7f3;
+    background-color: rgba(81, 142, 216, 0.2);
     color:#56c7f3;
-    font-weight: 900;
-    font-size: large;
-    width: 10vh;
-    height: 3vh;
+    font-size: 5vh;
+    width: 20vh;
+    height: 5vh;
+    margin-bottom:10px ;
+}
+.edit:hover img{
+    animation: mymove 3s linear infinite;
 }
 
 
@@ -60,4 +73,16 @@ button{
     100% {
         border-image-source: linear-gradient(90deg, #ffdb86, #f37256);
     }
+}
+@keyframes mymove{
+    0% {transform: rotateY(0deg) translateY(0px);}
+   
+    25% {transform: rotateY(90deg) translateY(-4px);}
+    
+    50% {transform: rotateY(180deg) translateY(0px);}
+    
+    75% {transform: rotateY(270deg) translateY(4px);}
+    
+    100% {transform: rotateY(360deg) translateY(0px);}
+    
 }

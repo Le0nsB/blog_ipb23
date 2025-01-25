@@ -8,7 +8,7 @@ body{
     border-image-slice: 1;
     padding: 0;
     margin: 0;
-
+    font-family: Courier, monospace;
 }
 header{
     border-bottom: 1px solid #505050;
@@ -32,4 +32,7 @@ a{
 }
 a:hover{
     color: #eecf8e;
+}
+input{
+    border-style: solid;
 }
