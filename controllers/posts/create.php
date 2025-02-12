@@ -13,7 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: /");
         exit();
     }
+    
+    
 }
+$categories = "SELECT category_name FROM categories";
+
 
 $pageTitle = "Create";
 $style = "css/create.style.css";
