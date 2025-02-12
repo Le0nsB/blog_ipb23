@@ -12,5 +12,5 @@ if (!$post){
     redirectIfNotFound();
 }
 $pageTitle = "Show";
-$style = "css/show.styles.css";
+$style = "css/show.style.css";
 require "views/posts/show.view.php";

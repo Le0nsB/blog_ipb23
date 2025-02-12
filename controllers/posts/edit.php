@@ -25,6 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 }
+if (!$post){
+    redirectIfNotFound();
+}
 
 $pageTitle = "Edit";
 $style = "css/edit.styles.css";

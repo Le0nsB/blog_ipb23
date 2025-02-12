@@ -18,3 +18,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $pageTitle = "Create";
 $style = "css/create.style.css";
 require "views/posts/create.view.php";
+?>
