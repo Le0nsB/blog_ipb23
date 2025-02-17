@@ -1,6 +1,4 @@
-body {
-    border-image-source: linear-gradient(90deg, #cf9a21, #cf4121);
-}
+
 h1{
     font-size: 30px;
     font-weight: bold;
@@ -52,24 +50,6 @@ button:hover img{
     animation: mymove 3s linear infinite;
 }
 
-
-@keyframes borderMove {
-    0% {
-        border-image-source: linear-gradient(90deg, #ffdb86, #f37256);
-    }
-    25% {
-        border-image-source: linear-gradient(180deg, #ffdb86, #f37256);
-    }
-    50% {
-        border-image-source: linear-gradient(270deg, #ffdb86, #f37256);
-    }
-    75% {
-        border-image-source: linear-gradient(360deg, #ffdb86, #f37256);
-    }
-    100% {
-        border-image-source: linear-gradient(90deg, #ffdb86, #f37256);
-    }
-}
 @keyframes mymove{
     0% {transform: rotateY(0deg) translateY(0px);}
    

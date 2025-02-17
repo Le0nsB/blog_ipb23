@@ -1,8 +1,4 @@
-body {
-    font-weight: bold;
-    color: #ffffff;
-    border-image-source: linear-gradient(90deg, #8f21cf, #a51212);
-}
+
 h1{
     font-size: 30px;
     color: #8f21cf;
@@ -16,23 +12,4 @@ h1:hover{
 p{
     text-shadow: 2px 2px 6px #000000;
     color: #a51212;
-}
-
-
-@keyframes borderMove {
-    0% {
-        border-image-source: linear-gradient(90deg, #8f21cf, #a51212);
-    }
-    25% {
-        border-image-source: linear-gradient(180deg, #8f21cf, #a51212);
-    }
-    50% {
-        border-image-source: linear-gradient(270deg, #8f21cf, #a51212);
-    }
-    75% {
-        border-image-source: linear-gradient(360deg, #8f21cf, #a51212);
-    }
-    100% {
-        border-image-source: linear-gradient(90deg, #8f21cf, #a51212);
-    }
 }

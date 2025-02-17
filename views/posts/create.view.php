@@ -8,7 +8,7 @@
         <input class="create" name="content" value="<?= htmlspecialchars($_POST['content'] ?? '') ?>" />
 
         <select name="category_id" id="category_id">
-          <option value="Izvelies">
+          <option value="Izvelies">Izvelies
             <?php foreach ($categories as $category): ?>
                 <option value="<?= htmlspecialchars($category['id']) ?>"
                 <?= (isset($_POST["category_id"]) && $_POST["category_id"] == $category["id"]) ? "selected" : ""?>>
