@@ -13,8 +13,8 @@ CREATE TABLE posts (
 INSERT INTO posts
 (content, category_id)
 VALUES
-("A", 1);
-("B", 2);
+("A", 1),
+("B", 2),
 ("C", 3);
 
 SELECT * FROM posts;
@@ -29,3 +29,9 @@ VALUES
 ("Svētki"),
 ("Mūzika"),
 ("Sports");
+
+CREATE TABLE comments (
+ autors
+ date_time
+ saturs
+)

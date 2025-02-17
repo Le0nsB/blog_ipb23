@@ -1,7 +1,7 @@
 <?php require "views/components/header.php" ?>
 <?php require "views/components/navbar.php" ?>
 
-<h1>Izveidot bloga ierakstu</h1>
+<h1>Izveidot kategoriju</h1>
 <form method="POST">
     <label>
         <input class="create" name="category_name" value="<?= htmlspecialchars($_POST['category_name'] ?? '') ?>" /><button type="submit" class="create"><span>ಠ_ಠ</span></button>

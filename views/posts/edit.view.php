@@ -9,9 +9,9 @@
 
     <label>
         <input class="create" name="content" value="<?= $post["content"] ?? '' ?>" />
-
+        
         <select name="category_id" id="category_id">
-          <option value="Izvelies">Izvelies
+            <option value="">Bez kategorijas</option>
             <?php foreach ($categories as $category): ?>
                 <option value="<?= htmlspecialchars($category['id']) ?>"
                 <?= ($post["category_id"] == $category["id"]) ? "selected" : ""?>>

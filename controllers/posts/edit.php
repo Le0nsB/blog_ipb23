@@ -20,13 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } 
 
     if (empty($errors)) {
-        $sql = 'UPDATE posts SET content = :content, category_id WHERE id = :id';
+        $sql = 'UPDATE posts SET content = :content, category_id = :category_id WHERE id = :id';
         $params = ["id" => $_POST["id"], "content" => $_POST["content"], "category_id" => $_POST["category_id"]];
         $post = $db->query($sql, $params)->fetch();
         
         header('Location: /show?id=' . $_POST["id"]);
         exit();
     }
+    
 }
 if (!$post){
     redirectIfNotFound();
