@@ -7,7 +7,8 @@ USE blog_ipb23;
 CREATE TABLE posts (
 	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	content  VARCHAR(5200),
-	category_id INT
+	category_id INT,
+	comment_id INT
 );
 
 INSERT INTO posts
@@ -31,7 +32,14 @@ VALUES
 ("Sports");
 
 CREATE TABLE comments (
- autors
- date_time
- saturs
-)
+ id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ autors VARCHAR(25),
+ date_time DATETIME NOT NULL DEFAULT NOW(),
+ saturs VARCHAR(5200)
+);
+INSERT INTO comments 
+(autors, saturs) 
+VALUES
+('Test User', 'This is a test comment.');
+
+SELECT * FROM comments;

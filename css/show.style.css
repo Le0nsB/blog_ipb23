@@ -10,7 +10,7 @@ h1:hover{
     color: #f37256;
     transform: scale(1.3);
 }
-button{
+.delete{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,17 +19,17 @@ button{
     border-width: 3px;
     color:#f37256;
     background-color: rgba(216, 121, 81, 0.2);
-    font-size: 5vh;
-    width: 21vh;
-    height: 5vh;
+    font-size: 3vh;
+    width: 12vh;
+    height: 4vh;
     font-family:'Courier New', Courier, monospace;
 }
 img{
-    width: 5vh;
-    height: 5vh;
+    width: 3vh;
+    height: 3vh;
     object-fit: cover;
 }
-button:hover img{
+.delete:hover img{
     animation: mymove 3s linear infinite;
 }
 
@@ -41,9 +41,9 @@ button:hover img{
     border-color:#56c7f3;
     background-color: rgba(81, 142, 216, 0.2);
     color:#56c7f3;
-    font-size: 5vh;
-    width: 20vh;
-    height: 5vh;
+    font-size: 3vh;
+    width: 12vh;
+    height: 4vh;
     margin-bottom:10px ;
 }
 .edit:hover img{

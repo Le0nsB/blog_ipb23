@@ -5,6 +5,7 @@ $db = new Database($config["database"]);
 
 $select = "SELECT * FROM categories";
 $params = [];
+
 if (isset($_GET["search_query"]) && $_GET["search_query"] != "" ){
   $search_query = "%" . $_GET["search_query"] . "%";
   $select .= " WHERE category_name LIKE :nosaukums";
