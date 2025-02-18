@@ -14,8 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors["category_id"] = "Nederigs kategorijas ID";
     }
     elseif (empty($errors)) {
+        //Vaicājuma sagatavošana
         $sql = "INSERT INTO posts (content, category_id) VALUES (:content, :category_id)";
+        //asociativais masīvs kurā tiek glabātas lietotāja ievadītās vērtības.
         $params = ["content" => $_POST["content"], "category_id" => $_POST["category_id"] ?: null];
+        //Vaicājuma izpilde ar parametriem
         $db->query($sql, $params);
         
         header("Location: /");
