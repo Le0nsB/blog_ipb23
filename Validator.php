@@ -1,5 +1,5 @@
 <?php
-
+//Parbauda vai $value ir vismaz 1 vērtibu garš
 class Validator{
     public static function string($value, $min = 1, $max = INF){
         $value = trim($value);
@@ -9,7 +9,7 @@ class Validator{
     }
     public static function number($value, $min = 1, $max = INF){
         $value = trim($value);
-        
+    
         return is_numeric($value)
                && $value >= $min
                && $value <= $max;
