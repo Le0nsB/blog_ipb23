@@ -4,7 +4,7 @@
 <h1>Izveidot bloga ierakstu</h1>
 <form method="POST">
     <label for="category_id">
-
+        //htmlspecialchars pasarga no uzbrukumiem piemeram ja ievada js vai html izvadis vnk tekstu
         <input class="create" name="content" value="<?= htmlspecialchars($_POST['content'] ?? '') ?>" />
         
         <select name="category_id" id="category_id">
