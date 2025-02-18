@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $errors = [];
     //Parbauda vai ir ievadits un garaks par 50
     if (!Validator::string($_POST["content"], max: 50)) {
+        // Ja errors ir tukšs tad tiek ielikts datubāzē bet ja masīvā ir kautkas iekšā tad neatļauj sūtīt uz datubazi
         $errors["content"] = "Saturam jābūt ievadītam bet īsākam par 50 rakstzīmēm.";
     }
     //Parbauda vai category_id ir tukšs un ja tas ir skaitlis
