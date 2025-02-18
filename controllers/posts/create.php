@@ -1,15 +1,18 @@
 <?php
 
 require "Validator.php";
-
+//Dabu visus datus no datubazes un ieliek masīvā $categories
+//Atceries ja vajag vienu ierakstu lieto fetch() bet ja vajag visus ierakstus lieto fetchall()
 $sql = "SELECT * FROM categories";
 $categories = $db->query($sql, [])->fetchall();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $errors = [];
+    //Parbauda vai ir ievadits un garaks par 50
     if (!Validator::string($_POST["content"], max: 50)) {
         $errors["content"] = "Saturam jābūt ievadītam bet īsākam par 50 rakstzīmēm.";
     }
+    //Parbauda vai category_id ir tukšs un ja tas ir skaitlis
     if(!empty($_POST["category_id"]) && !Validator::number($_POST["category_id"])){
         $errors["category_id"] = "Nederigs kategorijas ID";
     }
