@@ -1,3 +1,8 @@
+# Atļauj pārakstīt url
 RewriteEngine On
+
+# Pārbauda vai pieprasījums nav attēlam vai CSS vai JavaScript failam.
 RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg)$ [NC]
+
+# Novirza VISUS pieprasījumus uz index.php izņemot tos kas beidzas ar .css, .js .png .jpg.
 RewriteRule ^ index.php [QSA,L]
