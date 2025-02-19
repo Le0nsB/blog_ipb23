@@ -1,64 +1,17 @@
-
-h1{
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffdb86;
-    text-shadow: 2px 2px 6px #000000;
-    transition: color 1s ease, transform 0.6s ease;
+.cont{
+    width: 100vh;
+    border-style:solid;
+    border-width:5px;
+    border-radius: 8px;
+    border-color:#b96516;
+    margin: 5px;
+    padding: 5px;
 }
-h1:hover{
-    color: #f37256;
-    transform: scale(1.3);
-}
-.delete{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    border-color:#f37256;
-    border-width: 3px;
-    color:#f37256;
-    background-color: rgba(216, 121, 81, 0.2);
-    font-size: 3vh;
-    width: 12vh;
-    height: 4vh;
-    font-family:'Courier New', Courier, monospace;
-}
-img{
-    width: 3vh;
-    height: 3vh;
-    object-fit: cover;
-}
-.delete:hover img{
-    animation: mymove 3s linear infinite;
-}
-
-.edit{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    border-color:#56c7f3;
-    background-color: rgba(81, 142, 216, 0.2);
-    color:#56c7f3;
-    font-size: 3vh;
-    width: 12vh;
-    height: 4vh;
-    margin-bottom:10px ;
-}
-.edit:hover img{
-    animation: mymove 3s linear infinite;
-}
-
-@keyframes mymove{
-    0% {transform: rotateY(0deg) translateY(0px);}
-   
-    25% {transform: rotateY(90deg) translateY(-4px);}
-    
-    50% {transform: rotateY(180deg) translateY(0px);}
-    
-    75% {transform: rotateY(270deg) translateY(4px);}
-    
-    100% {transform: rotateY(360deg) translateY(0px);}
-    
+div div{
+    background-color: rgba(216, 184, 81, 0.08);
+    border-style:solid;
+    border-width:3px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
 }
